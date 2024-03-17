@@ -76,10 +76,13 @@ export default function Header() {
                     stiffness: 125,
                     delay: 2,
                 }}
-                className='p-9'>
-                <Spline scene="https://prod.spline.design/DQx13JtmADzuBnYx/scene.splinecode" />
+                className='lg:p-9 collapse lg:visible w-0 lg:w-full'>
+                <Spline scene="https://prod.spline.design/DQx13JtmADzuBnYx/scene.splinecode"/>
             </motion.div>
 
+                <div  className='w-screen visible lg:collapse min-h-full object-center pt-0 lg:w-0 lg:h-0'>
+                <Spline scene="https://prod.spline.design/SQKybbKWYHHKJSNX/scene.splinecode" />
+                </div>
 
         </div>
     );
