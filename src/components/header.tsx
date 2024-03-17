@@ -18,20 +18,20 @@ export default function Header() {
 
             <div className='text-center pt-9 '>
 
-                <div className='flex justify-center'>
+                <div>
                     <motion.div
-                        initial = {{opacity:0 , scale:0}}
-                        animate = {{opacity:1 , scale:1}}
+                        initial={{ opacity: 0, scale: 0 }}
+                        animate={{ opacity: 1, scale: 1 }}
                         transition={{
                             type: 'spring',
-                            stiffness:125,
-                            delay:1,
+                            stiffness: 125,
+                            delay: 1,
                         }}
-                    >
+                        className='flex justify-center'>
                         <Image alt="Ashish" src={pic} className='w-sm border-4 sm:border-8 p-5 border-violet-900 rounded-full m-5 transform transition-all hover:scale-90 '></Image>
                     </motion.div>
                 </div>
-                
+
                 <div className='flex justify-center gap-5 sm:gap-12  p-5'>
                     <a href='https://github.com/tisAshish'><FaGithub className='hover:bg-violet-900  bg-slate-400 rounded-full  w-16 h-16 p-1  transform transition-all hover:rotate-45' /></a>
                     <a href='https://leetcode.com/TisAshish/'><SiLeetcode className='hover:bg-violet-900 bg-slate-400 rounded-full  w-16 h-16 p-2 transform transition-all hover:rotate-45' /></a>
@@ -42,9 +42,9 @@ export default function Header() {
                 <div className='flex justify-center'>
                     <div className='text-left'>
 
-                       <div>
+                        <div>
                             <h1 className='pt-5 pb-5 text-5xl lg:text-8xl font-light text-slate-400'>Hi, I am <span className='text-violet-800 font-bold'>Ashish Lal</span></h1>
-                       </div>
+                        </div>
 
                         <TypeAnimation
                             sequence={[
@@ -69,14 +69,14 @@ export default function Header() {
             </div>
 
             <motion.div
-                       initial = {{opacity:0 , scale:0}}
-                       animate = {{opacity:1 , scale:1}}
-                       transition={{
-                           type: 'spring',
-                           stiffness:125,
-                           delay:2,
-                       }}
-            >
+                initial={{ opacity: 0, scale: 0 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{
+                    type: 'spring',
+                    stiffness: 125,
+                    delay: 2,
+                }}
+                className='p-9'>
                 <Spline scene="https://prod.spline.design/DQx13JtmADzuBnYx/scene.splinecode" />
             </motion.div>
 
