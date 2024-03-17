@@ -6,7 +6,7 @@ import Spline from '@splinetool/react-spline';
 
 import { motion } from "framer-motion"
 
-import Socials from './socials'
+
 import { FaGithub } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
@@ -33,9 +33,10 @@ export default function Header() {
                 </div>
                 
                 <div className='flex justify-center gap-5 sm:gap-12  p-5'>
-                    <a href='https://github.com/tisAshish'><Socials icon={<FaGithub className='hover:bg-violet-900  bg-slate-400 rounded-full  w-16 h-16 p-1  transform transition-all hover:rotate-45' />} /></a>
-                    <a href='https://leetcode.com/TisAshish/'><Socials icon={<SiLeetcode className='hover:bg-violet-900 bg-slate-400 rounded-full  w-16 h-16 p-2 transform transition-all hover:rotate-45' />} /></a>
-                    <a href='mailto:ashishlalcs@gmail.com'><Socials icon={<MdEmail className='hover:bg-violet-900 bg-slate-400 rounded-full  w-16 h-16 p-2 transition ease-out duration-300 transform transition-all hover:rotate-45' />} /></a>
+                    <a href='https://github.com/tisAshish'><FaGithub className='hover:bg-violet-900  bg-slate-400 rounded-full  w-16 h-16 p-1  transform transition-all hover:rotate-45' /></a>
+                    <a href='https://leetcode.com/TisAshish/'><SiLeetcode className='hover:bg-violet-900 bg-slate-400 rounded-full  w-16 h-16 p-2 transform transition-all hover:rotate-45' /></a>
+                    <a href='mailto:ashishlalcs@gmail.com'><MdEmail className='hover:bg-violet-900 bg-slate-400 rounded-full  w-16 h-16 p-2  transform transition-all hover:rotate-45' /></a>
+
                 </div>
 
                 <div className='flex justify-center'>
@@ -84,3 +85,4 @@ export default function Header() {
     );
 }
 
+//
