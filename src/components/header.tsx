@@ -1,5 +1,5 @@
 "use client"
-import { TypeAnimation } from 'react-type-animation';
+
 import Image from 'next/image'
 import pic from "../public/ashish.png"
 import Spline from '@splinetool/react-spline';
@@ -13,79 +13,44 @@ import { MdEmail } from "react-icons/md";
 
 export default function Header() {
     return (
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 bg-black pt-9  rounded-3xl ml-9 mr-9  ">
+        <div className=" bg-black  w-screen h-screen pb-0">
 
 
-            <div className='text-center pt-9 '>
+            <div className='relative flex justify-center '>
 
-                <div>
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{
-                            type: 'spring',
-                            stiffness: 125,
-                            delay: 1,
-                        }}
-                        className='flex justify-center'>
-                        <Image alt="Ashish" src={pic} className='w-sm border-4 sm:border-8 p-5 border-violet-900 rounded-full m-5 transform transition-all hover:scale-90 '></Image>
-                    </motion.div>
-                </div>
 
-                <div className='flex justify-center gap-5 sm:gap-12  p-5'>
-                    <a href='https://github.com/tisAshish'><FaGithub className='hover:bg-violet-900  bg-slate-400 rounded-full  w-16 h-16 p-1  transform transition-all hover:rotate-45' /></a>
-                    <a href='https://leetcode.com/TisAshish/'><SiLeetcode className='hover:bg-violet-900 bg-slate-400 rounded-full  w-16 h-16 p-2 transform transition-all hover:rotate-45' /></a>
-                    <a href='mailto:ashishlalcs@gmail.com'><MdEmail className='hover:bg-violet-900 bg-slate-400 rounded-full  w-16 h-16 p-2  transform transition-all hover:rotate-45' /></a>
+                <motion.div
+                    className='absolute z-2  mt-0 bg-black  '>
 
-                </div>
+                    <Spline scene="https://prod.spline.design/SQKybbKWYHHKJSNX/scene.splinecode" />
+                </motion.div>
 
-                <div className='flex justify-center'>
-                    <div className='text-left'>
+                <motion.div
+                    initial={{ opacity: 0, scale: 0 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{
+                        type: 'spring',
+                        stiffness: 125,
+                        delay: 1,
+                    }}
+                    className='absolute z-1  mt-52 p-auto'>
+                    <Image alt="Ashish" src={pic} className='w-sm border-4 sm:border-8 p-5 border-violet-900 rounded-full  transform transition-all hover:scale-90 '></Image>
+                                    
+                    <div className='flex justify-center gap-5 sm:gap-12  p-5 pt-9'>
+                        <a href='https://github.com/tisAshish'><FaGithub className='hover:bg-violet-900  bg-slate-400 rounded-full  w-16 h-16 p-1  transform transition-all hover:rotate-45' /></a>
+                        <a href='https://leetcode.com/TisAshish/'><SiLeetcode className='hover:bg-violet-900 bg-slate-400 rounded-full  w-16 h-16 p-2 transform transition-all hover:rotate-45' /></a>
+                        <a href='mailto:ashishlalcs@gmail.com'><MdEmail className='hover:bg-violet-900 bg-slate-400 rounded-full  w-16 h-16 p-2  transform transition-all hover:rotate-45' /></a>
 
-                        <div>
-                            <h1 className='pt-5 pb-5 text-5xl lg:text-8xl font-light text-slate-400'>Hi, I am <span className='text-violet-800 font-bold'>Ashish Lal</span></h1>
-                        </div>
-
-                        <TypeAnimation
-                            sequence={[
-                                'I am a Postgraduate',
-                                1000,
-                                'I am a Digital Artist',
-                                1000,
-                                'I am a Web-Developer',
-                                1000,
-                            ]}
-                            wrapper="span"
-                            speed={50}
-                            style={{
-                                fontSize: '200%', display: 'inline-block', color: '#64748b'
-                            }}
-                            repeat={Infinity}
-                        />
                     </div>
-                </div>
+ 
+
+                </motion.div>
 
 
             </div>
-
-            <motion.div
-                initial={{ opacity: 0, scale: 0 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{
-                    type: 'spring',
-                    stiffness: 125,
-                    delay: 2,
-                }}
-                className='lg:p-9 collapse lg:visible w-0 lg:w-full'>
-                <Spline scene="https://prod.spline.design/DQx13JtmADzuBnYx/scene.splinecode"/>
-            </motion.div>
-
-                <div  className='w-screen visible lg:collapse min-h-full object-center pt-0 lg:w-0 lg:h-0'>
-                <Spline scene="https://prod.spline.design/SQKybbKWYHHKJSNX/scene.splinecode" />
-                </div>
 
         </div>
     );
 }
 
-//
+//<Spline scene="https://prod.spline.design/DQx13JtmADzuBnYx/scene.splinecode" />
