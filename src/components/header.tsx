@@ -36,7 +36,7 @@ export default function Header() {
                     className='absolute z-1  mt-52 p-5'>
                     <Image alt="Ashish" src={pic} className='w-sm border-4 sm:border-8 p-5 border-violet-900 rounded-full  transform transition-all hover:scale-90 '></Image>
                                     
-                    <div className='flex justify-center gap-5 sm:gap-12  p-9 pt-9'>
+                    <div className='flex justify-center gap-5 sm:gap-12  p-9 pt-4'>
                         <a href='https://github.com/tisAshish'><FaGithub className='hover:bg-violet-900  bg-slate-400 rounded-full  w-16 h-16 p-1  transform transition-all hover:rotate-45' /></a>
                         <a href='https://leetcode.com/TisAshish/'><SiLeetcode className='hover:bg-violet-900 bg-slate-400 rounded-full  w-16 h-16 p-2 transform transition-all hover:rotate-45' /></a>
                         <a href='mailto:ashishlalcs@gmail.com'><MdEmail className='hover:bg-violet-900 bg-slate-400 rounded-full  w-16 h-16 p-2  transform transition-all hover:rotate-45' /></a>
