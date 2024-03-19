@@ -20,7 +20,7 @@ export default function Header() {
 
 
                 <motion.div
-                    className='absolute z-2  mt-0 bg-black  '>
+                    className='absolute z-2  mt-0 bg-black '>
 
                     <Spline scene="https://prod.spline.design/SQKybbKWYHHKJSNX/scene.splinecode" />
                 </motion.div>
@@ -33,7 +33,7 @@ export default function Header() {
                         stiffness: 125,
                         delay: 1,
                     }}
-                    className='absolute z-1  mt-52 p-auto'>
+                    className='absolute z-1  mt-52 p-5'>
                     <Image alt="Ashish" src={pic} className='w-sm border-4 sm:border-8 p-5 border-violet-900 rounded-full  transform transition-all hover:scale-90 '></Image>
                                     
                     <div className='flex justify-center gap-5 sm:gap-12  p-5 pt-9'>
