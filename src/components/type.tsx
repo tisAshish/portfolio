@@ -1,15 +1,12 @@
 "use client"
+import { Weight } from 'lucide-react';
 import { TypeAnimation } from 'react-type-animation';
 
 export default function Type() {
     return (
-        <div className='bg-black mt-0 relative'>
+        <div className='bg-transparent mt-5 '>
                     <div className='flex justify-center'>
-                        <div className='text-left'>
-
-                            <div>
-                                <h1 className='pt-5 pb-5 text-5xl lg:text-8xl font-light text-slate-400'>Hi, I am <span className='text-violet-800 font-bold'>Ashish Lal</span></h1>
-                            </div>
+                        <div className='text-left font-thin'>
 
                             <TypeAnimation
                                 sequence={[
@@ -23,7 +20,7 @@ export default function Type() {
                                 wrapper="span"
                                 speed={50}
                                 style={{
-                                    fontSize: '200%', display: 'inline-block', color: '#64748b'
+                                    fontSize: '200%', display: 'inline-block', color: '#E2E8F0', 
                                 }}
                                 repeat={Infinity}
                             />
@@ -32,3 +29,11 @@ export default function Type() {
         </div>
     );
 }
+
+/*
+<div>
+<h1 className='pt-5 pb-5 text-5xl lg:text-8xl font-light text-slate-400'>Hi, I am <span className='text-violet-800 font-bold'>Ashish Lal</span></h1>
+</div>
+color: '#64748b'
+color: '#E2E8F0'
+*/
